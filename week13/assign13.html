@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IDAHO FALLRAISE FESTIVAL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="a13.css">
+    </head>
+    <body>
+        <script src="assign13.js"></script>
+        <header>
+            <h1>IDAHO FALLRAISE FESTIVAL - Piano Edition</h1>
+            <img src="fst_img.jpg" alt="festival">
+        </header>
+        <form action="assign13.php" method="POST">
+            <h2>Registration Information:</h2>
+
+            <div id="selcInfo">
+            
+                <div class="perfInfo">
+                    <h3>Performace Info</h3>
+            
+                    <div class="type">
+                        <h4>Type:</h4>
+                        <input type="radio" id="solo" name="performan" value="solo" onclick="hide()" required="required">
+                        <label for="solo">Solo</label>
+                        <input type="radio" id="duet" name="performan" value="duet" onclick="showHidden()" required="required">
+                        <label for="duet">Duet</label>
+                        <input type="radio" id="concerto" name="performan" value="concerto" onclick="hide()" required="required">
+                        <label for="concerto">Concerto</label><br>
+                    </div>
+            
+                    <div class="building">
+                        <h4>Building:</h4>
+                        <select name="build" id="building" required="required">
+                            <option value="">Choose Your Location</option>
+                            <option value="Snow">Snow</option>
+                            <option value="Manwaring">Manwaring</option>
+                            <option value="Austin">Austin</option>
+                        </select><br>
+                    </div>
+            
+                    <div class="rmNumber">
+                        <h4>Room #:</h4>
+                        <input type="text" id="roomNumber" name="room" size="4" minlength="1" maxlength="3" placeholder="###A" required="required"> <br>
+                    </div>
+            
+                    <div class="time">
+                        <h4>Time Slot:</h4>
+                        <input type="time" id="time" name="timeSl" required="required"> <br>
+                    </div>
+                </div>
+            
+                <div class="studInfo">
+
+                    <div class="sInfo">
+                       <h3>Student Info</h3>
+                        <div class="studentInf">
+                            <h4>Student 1:</h4>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstName" required="required"><br>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastName" required="required"><br>
+                            <label for="studentID">Student ID #:</label>
+                            <input type="number" id="studentID" name="studentId" placeholder="#######" required="required"><br>
+                        </div>
+                        
+                        <div id="stHiddInf" hidden>
+                            <h4>Student 2:</h4>
+                            <label for="firstname_2">First Name:</label>
+                            <input type="text" id="firstname2" name="firstName2" required="required"><br>
+                            <label for="lastname_2">Last Name:</label>
+                            <input type="text" id="lastname2" name="lastName2" required="required"><br>
+                            <label for="studentID_2">Student ID #:</label>
+                            <input type="number" id="studentID2" name="studentId2" placeholder="#######" required="required">
+                        </div>
+
+                        <div class="skillevel">
+                            <h4>Skill Level:</h4>
+                            <select id="skills" name="skll" required="required">
+                                <option value="">Choose one</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Pre-Advanced">Pre-Advanced</option>
+                                <option value="Advanced">Advanced</option>
+                            </select><br>
+                        </div>
+
+                        <div class="instrm">
+                            <h4>Instrument:</h4>
+                            <select name="instrument" id="instruments" required="required">
+                                <option value="">Choose one</option>
+                                <option value="piano">Piano</option>
+                                <option value="string">String</option>
+                                <option value="organ">Organ</option>
+                                <option value="voice">Voice</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" name="register">Register Student(s)</button>
+                <button type="reset" name="clear">Clear Form</button>
+            </div>   
+        </form>
+        <nav id="home">
+            <a href="/~markcalla/index.html">
+                <img src="index.gif" alt="homelink"  height="120px" style="float: left; padding: 10px;">    
+            </a>
+        </nav>
+        <footer>
+            <h6>© by Mark Calla</h6>
+        </footer>
+    </body>
+</html>   

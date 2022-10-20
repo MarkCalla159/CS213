@@ -1,0 +1,87 @@
+@media screen and (max-width: 1300px) {
+    #container_0, #container_1, #container_2, #container_3, #container_4 {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width: 600px) {
+    #container_0, #container_1, #container_2, #container_3, #container_4  {
+        grid-template-columns: auto;
+        grid-gap: 1rem;
+    }
+    img {
+      max-width: 50%;
+      width: 50%;
+    }
+}
+header{
+    padding: 10px;
+    color: rgb(81, 185, 40);
+    background-color: #fff ;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+}
+header img{
+    width: 30%;
+}
+footer img{
+    width: 5%;
+}
+footer{
+    text-align: center;
+    font-size: 24px;
+    background-color:rgb(79, 153, 83);
+    overflow: hidden;
+    margin-top: 8px;
+    border-radius: 13px;
+}
+input[type=text], input[type=number], input[type=time]{
+    width: 10%;
+    background-color: #1279dafb;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    text-align: center;
+}
+#selcInfo{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#26607F;
+}
+.buttons{
+    text-align: center;
+}
+select{
+    width: 15%;
+    background-color: #037fc2;
+    color: white;
+    padding: 0.5em;
+    margin: 4px 0;
+}
+button[type=submit], button[type=reset]{
+    width: 15%;
+    background-color: #26607F;
+    color: white;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 9px;
+}
+h2, h3{
+    text-align: center;
+    font-size: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+b{
+    text-align: center;
+    color: #26607F;
+    font-size: 25px;
+}
+.std_record{
+    text-align: center;
+    color: #26607F;
+    font-size: 25px;
+}

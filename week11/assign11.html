@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Macchu Picchu Qhatu</title>
+        <meta charset="utf-8">
+        <meta name="description" content="width=device-width, initial-scale=4.0">
+        <link rel="stylesheet" href="mpq_style.css"/>
+    </head>
+    <body>
+        <script src="mpq.js"></script>
+        <nav id="logo">
+            <a href="https://www.machupicchu.gob.pe/">
+                <img src="logo.png" alt="Information" height="107" width="140" style="float: left; padding: 10px;"  />
+            </a>
+        </nav>
+        <header>
+            <h1>
+                Welcome Macchu Picchu Qhatu:Checkout
+            </h1>
+        </header>
+
+        <h3>TOURS</h3>
+        <h2>Choose your Tour:</h2>
+        <form action="assign11.php" method="post">
+            <div class="tour_container">
+                <section id="container_0" class="blue_rounded">
+                    <article class="tours rounded">
+                        <div class="tour1">
+                            <p>Machu Picchu 1 Day Tour, Trip From Cusco | Machu Picchu Full Day</p>
+                            <img src="tour_1.jpg" alt="Macchu_Picchu_Full_Day">
+                            <p>Cost: US $275,00 per person</p>
+                            <input type="number" id="prod0" name="item_0" min="0" max="10" value="0" oninput="calculateTotal()">
+                            <label for="prod0">(Max. 10 persons per group)</label>
+                        </div>
+                    </article>
+                </section>
+    
+                <section id="container_1" class="blue_rounded">
+                    <article class="tours rounded">
+                        <div class="tour2">
+                            <p>CHEAPEST Tour To Machu Picchu 1 Day</p>
+                            <img src="tour_2.jpg" alt="CHEAPEST_1_Day">
+                            <p>Cost: US $260,00 per person</p>
+                            <input type="number" id="prod1" name="item_1" min="0" max="15" value="0" oninput="calculateTotal()">
+                            <label for="prod1">(Max. 15 person per group)</label>
+                        </div>
+                    </article>
+                </section>
+    
+                <section id="container_2" class="blue_rounded">
+                    <article class="tours rounded">
+                        <div class="tour3">
+                            <p>Inti Raymi 2020: Tour in Cusco and Machu Picchu 5 Days</p>
+                            <img src="tour_3.jpg" alt="Macchu_Picchu_and_Cusco_5Days">
+                            <p>Cost: US $780,00 per person</p>
+                            <input type="number" id="prod2" name="item_2" min="0" max="5" value="0" oninput="calculateTotal()">
+                            <label for="prod2">(Max. 5 person per group)</label>
+                        </div>
+                    </article>
+                </section>
+    
+                <section id="container_3" class="blue_rounded">
+                    <article class="tours rounded">
+                        <div class="tour4">
+                            <p>Cusco, Sacred Valley, Machu Picchu And Rainbow Mountain 5 Days Tour</p>
+                            <img src="tour_4.jpg" alt="Macchu_Picchu_Sacred_Valley">
+                            <p>Cost: US $585,00 per person</p>
+                            <input type="number" id="prod3" name="item_3" min="0" max="5" value="0" oninput="calculateTotal()">
+                            <label for="prod3">(Max. 7 person per group)</label>
+                        </div>
+                    </article>
+                </section>
+    
+                <section id="container_4" class="blue_rounded">
+                    <article class="tours rounded">
+                        <div class="tour5">
+                            <p>Family Vacation Tour to the Sacred Valley & Machu Picchu 4 Days</p>
+                            <img src="tour_5.jpg" alt="Macchu_Picchu_Family">
+                            <p>Cost: US $985.00 per family (4 person per family)</p>
+                            <input type="number" id="prod4" name="item_4" min="0" max="2" value="0" oninput="calculateTotal()">
+                            <label for="prod4">(Max. 2 families)</label>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <p style="font-size: 20px; text-align: center; color: chocolate;">*All Tours include transportation, 3 meals per day and bed(the last one could vary according to the tour for more information contact us) </p>
+            <div class="total_container">
+                    <label for="totalAmt">Total:</label>
+                    US $ <output name="total" id="totalAmt">0.00</output>
+            </div>
+            <h3>Payment:</h3>
+            <div class="card_container">
+           
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_name" required="required"><br><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name" required="required"><br><br>
+
+                <label for="address_input">Address(Street Address, City, State, and Zip):</label>
+                <input type="text" id="address_input" name="address" required="required"><br><br>
+
+                <label for="phone_input">Phone Number (i.e. 208-555-5555):</label>
+                <input type="text" id="phone_input" name="phone" minlength="1" maxlength="12" required="required" onchange="validatePhone()">
+                <br><p id="phone_error"></p>
+
+                <div class="credit_item">
+
+                    <input type="radio" id="visa" name="card" value="Visa" required="required">
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="americanExp" name="card" value="American Express required="required">
+                    <label for="americanExp">American Express</label>
+                    <input type="radio" id="mastercard" name="card" value="Master Card" required="required">
+                    <label for="mastercard">Mastercard</label>
+                    <p id="creditCard_error"></p>
+                </div>
+
+                <label for="card_number">Credit Card # (i.e. 1111 1111 1111 1111):</label>
+                <input type="text" id="card_number" name="credit_card"  minlength="1" maxlength="19" required="required" onchange="validateCreditCard()">
+                <p id="credit_error"></p>
+
+                <label for="card_exp">Credit Card Exp. Date (i.e. valid month (1-12); 01/2020):</label>
+                <input type="text" id="card_exp" name="exp_date"  minlength="1" maxlength="7" required="required" onchange="validateCreditDate()">
+                <p id="exp_error"></p>
+
+                <button type="submit" onclick="validation()">Submit</button>
+
+                <button type="reset" onclick="resetFunction()">Clear</button>
+            </div>
+        </form>
+        
+        <footer>
+            <h5> © Macchu Picchu Qhatu:Checkout by Mark Calla</h5>
+            <h6>
+                "ENJOY YOUR EXPERIENCE, CHOOSE US"
+                CONTACT NUMBER: +51 976505295
+            </h6>
+            <nav id="home">
+                <a href="/~markcalla/index.html">
+                    <img src="index.gif" alt="homelink">    
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

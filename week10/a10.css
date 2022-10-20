@@ -1,0 +1,56 @@
+header{
+    padding: 10px;
+    color: rgb(81, 185, 40);
+    background-color: #fff ;
+    text-align: left;
+    font-size: 25px;
+    border-radius: 15px;
+    width: 1000px;
+}
+nav img{
+    width: 15%;
+    position:inherit;
+}
+footer img{
+    width: 5%;
+    margin: auto 0;
+    position: inherit;
+}
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color:rgb(79, 153, 83);
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 13px;
+}
+table,
+th,
+td {
+    color: lavender;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #c3d3dd;
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: #1f91dd;
+    box-shadow: 0 0 12px rgb(82, 77, 77);
+}
+.json_php_table {
+    background-color: #4880d4;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 0 12px rgba(102, 45, 45, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+a:link{
+    text-decoration: none;
+    color: crimson;
+}
+a:visited{
+    text-decoration: none;
+    color: darkred;
+}

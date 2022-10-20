@@ -1,0 +1,13 @@
+[
+    {“fileName” : “mortage.html”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “mort_calc.php”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “calc_mort.js”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “calc_style.css”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “index.gif”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “mtgg_ing”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “assign10.html”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week10/”},
+    {“fileName” : “index.html”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/”},
+    {“fileName” : “assign09.html”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week09/”},
+    {“fileName” : “canada.txt”, “fileType” : ”file”, “cwd” : “/home/cal18034/public_html/week09/”},
+    {“fileName” : “week07”, “fileType” : ”dir”, “cwd” : “/home/cal18034/public_html”},
+]

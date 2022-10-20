@@ -1,0 +1,154 @@
+@media screen and (max-width: 1300px) {
+    #container_0, #container_1, #container_2, #container_3, #container_4 {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width: 600px) {
+    #container_0, #container_1, #container_2, #container_3, #container_4  {
+        grid-template-columns: auto;
+        grid-gap: 1rem;
+    }
+    img {
+      max-width: 50%;
+      width: 50%;
+    }
+}
+body{
+    background-color: rgb(213, 219, 130);
+    align-content: center;
+}
+.tour_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem 1rem;
+}
+h2, h3{
+    color: rgb(65, 114, 16);
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color: rgb(65, 114, 16);
+    text-align: center;
+    font-size: 25px;
+}
+img{
+    border-radius: 10px;
+}
+#container_0, #container_1, #container_2, #container_3, #container_4{
+    width: 75%;
+    align-content: center;
+}
+header{
+    padding: 10px;
+    color: rgb(81, 185, 40);
+    background-color: #fff ;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+}
+footer img{
+    width: 5%;
+}
+footer{
+    text-align: center;
+    font-size: 24px;
+    background-color:rgb(79, 153, 83);
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 13px;
+}
+.blue_rounded {
+    border: 2px solid #26607F;
+	border-radius: 0.5rem;
+    background-color: #52af1d;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 1rem;
+	padding: 1rem;
+    width: 90%;
+}
+.card_container{
+    margin: auto;
+    background-color: whitesmoke;
+    width: 800px;
+    padding: 30px;
+    border-radius: 11px;
+}
+input[type=number]{
+    width: 15%;
+    background-color: #26607F;
+    color: white;
+    padding: 0.5em;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+input[type=text]{
+    width: 20%;
+    background-color: #26607F;
+    color: white;
+}
+#creditCard_error, #phone_error, #credit_error, #exp_error {
+    font-size: 17px;
+    color: red;
+}
+button[type=submit], button[type=reset]{
+    width: 15%;
+    background-color: #26607F;
+    color: white;
+    padding: 0.5em;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#Pay_Validation label{
+    color: #26607F;
+}
+.rounded {
+    border: 2px solid #26607F;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.tour1, .tour2, .tour3, .tour4, .tour5 p{
+    color: #52af1d;
+}
+.total_container{
+    font-size: 27px;
+    font-family: Verdana;
+    color:#26607F;
+    text-align: center;
+}
+.verif_cont{
+    font-family: 'Lucida Sans';
+    color: whitesmoke;
+    text-align: center;
+}
+.os_container{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px rgba(144, 144, 163, 0.747);
+    background-color: #10da10;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto auto;
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+}

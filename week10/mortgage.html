@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS MORTGAGE CALCULATOR</title>
+        <meta charset="utf-8">
+        <meta name="description" content="width=device-width, initial-scale=4.0">
+        <link rel="stylesheet" href="calc_style.css"/>
+    </head>
+
+    <body>
+        <script src="calc_mort.js"></script>
+        <header>
+            <img src="mtgg_img.jpg" alt="logo">
+            <h1>Mortage Calculator</h1>
+        </header>
+        <div id="mort_clc">
+            <div class="mtgg_clc">
+                <form action="mort_calc.php" method="GET">
+                    <h2>Calculate Your Monthly Mortgage Payment:</h2><br>
+
+                    <h4>Mortgage Information</h4>
+                    <div class="APR">
+                        <label for="apr">Annual Percentage Rate %(APR): </label>
+                        <input type="number" name="apr" id="apr" min="0.00" max="25.00" onchange="getAPR()"> %<br>
+                        <p id="apr_error"></p>
+                    </div>
+                    <div class="loanTerm">
+                        <label for="term">Loan Term (Years): </label>
+                        <input type="number" name="term" id="term" min="1" max="40" onchange="getTerm()"> Years<br>
+                        <p id="term_error"></p>
+                    </div>
+                    <div class="loanAmount">
+                        <label for="amount">Loan Amount (Dollars): </label>
+                        $<input type="number" name="amount" id="amount" min="1" onchange="getAmount()"><br>
+                        <p id="amt_error"></p>
+                    </div>
+                    <div class="mortgagePayment">
+                        <label for="payment">Monthly Payment:</label>
+                        <output id="payment"></output><br><br>
+                    </div>
+                    <div class="buttons">
+                        <button id="calculate" type="submit">Calculate Payment</button>
+                        <button id="clear" type="reset" value="Reset">Reset Values</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="personalInfo">
+            <div class="container">
+                <form action="#">
+                    <div class="row">
+                        <h3>Personal Information</h3>
+                        <div class="firstBox">
+                            <label for="name">Name</label><br>
+                        </div>
+                        <div class="secondBox">
+                            <input type="text" id="name" value="" placeholder="Your name.." required> <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="firstBox">
+                            <label for="mail">E-Mail</label>
+                        </div>
+                        <div class="secondBox">
+                            <input type="email" id="mail" value="" placeholder="Enter your E-Mail" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio"><label>Send me a mail</label>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit"/>
+                        <input id="reset" type="reset" value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <footer>
+        <nav id="home">
+            <a href="/~markcalla/index.html">
+                <img src="index.gif" alt="homelink">    
+            </a>
+        </nav>
+        <h5> © Mortgage Calculator by Mark Calla</h5>
+    </footer>
+</body>
+
+</html>

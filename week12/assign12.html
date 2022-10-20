@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mileage Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="a12.css">
+    </head>
+    <body>
+        <script src="assign12.js"></script>
+        <nav id="logo">
+            <a href="https://www.calculator.net/mileage-calculator.html">
+                <img src="mlg.png" alt="Information" height="107" width="140" style="float: left; padding: 10px;"  />
+            </a>
+        </nav>
+        <header>
+            <h1>Mileage Calculator</h1>
+        </header>
+        <div class="info">
+            <label for="startCity">Start City</label><br>
+            <input type="text" name="startCity" id="startCity" placeholder="e.g. Boise" required><br>
+
+            <label for="startState">Start State</label><br>
+            <input type="text" name="startState" id="startState" placeholder="e.g. ID" size="2"required><br>
+            
+            <label for="endCity">Destination City</label><br>
+            <input type="text" name="endCity" id="endCity" placeholder="e.g. Portland" required><br>
+
+            <label for="endState">Destination State</label><br>
+            <input type="text" name="endState" id="endState" placeholder="e.g. OR" size="2" required><br>
+        </div>
+        <div id="response">
+            <button type="button" onclick="getMileage()">Calculate Mileage</button><br>
+            <div id="output"></div>
+        </div>
+        <nav id="home">
+            <a href="/~markcalla/index.html">
+                <img src="index.gif" alt="homelink"  height="120px" style="float: left; padding: 10px;">    
+            </a>
+        </nav>
+        <footer>
+            <h6>© by Mark Calla</h6>
+        </footer>
+    </body>
+</html>

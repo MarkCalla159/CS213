@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <title>AJAX</title>
+        <meta charset="utf-8">
+        <meta name="description" content="width=device-width, initial-scale=4.0">
+        <link rel="stylesheet" href="a09.css"/>
+    </head>
+    <body>
+        <script src="a09.js"></script>
+        <nav id="logo">
+            <a href="https://www.w3schools.com/js/js_ajax_intro.asp">
+                <img src="ajlogo.jpg" alt="Information" height="107" width="140" style="float: left; padding: 10px;">
+            </a>
+        </nav>
+        <header>
+            <h1>
+                COUNTRIES AND STUDENTS
+            </h1>
+        </header>
+        <div id="fPart">
+            <h2>COUNTRIES</h2>
+            <p>
+                This part allows everyone to select one of four countries and display the ten largest cities and their population.
+            </p>
+            <!-- using Ajax Examples Simple Examples-->
+            <form id="Country">
+                <label for="country">Select a Country</label>
+                <select name="f_Part" id="country" onchange="getCountry(this.value)">
+                    <option value="none.txt">Select one</option>
+                    <option value="canada.txt">Canada</option>
+                    <option value="mexico.txt">Mexico</option>
+                    <option value="russia.txt">Russia</option>
+                    <option value="usa.txt">USA</option>
+                </select>
+            </form>
+            <div class="display">
+                <p id="country_cities">You can see the display here:</p>
+            </div>
+        </div>
+        <div id="sPart">
+            <h3>STUDENTS</h3>
+            <p>
+                This part allows everyone to search for a specific file (this include first name, last name, address, gpa, and major).
+            </p>
+            <!-- using Ajax Examples Request XML Files-->
+            <form>
+                <label for="url">Enter the filename that you´re looking for:</label>
+                <input type="text" id="url" value="json.txt">
+                <button type="button" onclick="loadFile()">Search</button>
+            </form>
+            <div class="display">
+                <table id="students"></table>
+            </div>
+        </div>
+        <nav id="home">
+            <a href="/~markcalla/index.html">
+                <img src="index.gif" alt="homelink"  height="120px" style="float: left; padding: 10px;">    
+            </a>
+        </nav>
+        <footer>
+            <h6>© by Mark Calla</h6>
+        </footer>
+    </body>
+</html>
