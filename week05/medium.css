@@ -1,0 +1,36 @@
+@media only screen and (min-width: 32.5rem) {
+    
+    header {
+        font-size: large;
+    }
+    input[type=submit]{
+        width: 30%;
+        background-color: #3748aa;
+        color: white;
+        padding: 1em;
+        margin: 4px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    p:hover{
+        background-color: olivedrab;
+    }
+    h2, h3, h4 {
+        font-family: 'Condiment', cursive;
+        padding: 1vw;
+    }
+    h2{
+        background-color: blanchedalmond;
+        border-radius: 13px;
+    }
+    .imgTeam img{
+        padding: 10px;
+    }
+    .wpTeam img{
+        width: 50%;
+        position: relative;
+        cursor:cell;
+    }
+}

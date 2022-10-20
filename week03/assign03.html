@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mark Calla's Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=4.0">
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            p{
+                font-style: italic;
+                font-size: larger;
+                background-color: skyblue;
+                color: whitesmoke;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            table, tr{
+                border: 3px solid rgb(84, 243, 10);
+                width: 70%;
+                border-collapse: collapse;
+                color: rgb(84, 243, 10);
+                background-color: whitesmoke;
+            }
+            td{
+                border: 3px solid rgb(84, 243, 10);
+                text-align: center;
+            }
+            th{
+                font-weight: bold;
+                font-family: Cambria;
+                padding: 5px;
+                color:rgb(84, 243, 10);
+                font-size: 25px;
+            }
+            h1{
+                background-color: #4CAF50;
+                border-radius: 4px;
+                color: whitesmoke;
+                padding: 10px;
+            }
+            h1:hover {
+                width: 700px;
+            }
+            h2{
+                color: rgb(84, 243, 10);
+                position: relative;
+                overflow: auto;
+                animation: cs 10s infinite;
+            }
+
+            @keyframes cs {
+                from {
+                    left: 0px;
+                }
+
+                to {
+                    left: 800px;
+                }
+            }
+
+            h3{
+                color: rgb(84, 243, 10);
+                position: relative;
+                overflow: auto; 
+            }
+
+            h4{
+                font-family: cursive;
+                text-align: center;
+                font-size: larger;
+                color: rgb(84, 243, 10);
+                position: relative;
+                overflow: auto;
+            }
+
+            h5{
+                font-family: 'Lucida Sans';
+                font-size: 24px;
+                background-color:rgb(89, 187, 44);
+                border-radius: 20px;
+                padding: 15px;
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="homeLinks">
+            <ul style="
+                list-style-type: none;  
+                position: relative;">
+                <li style="font-family: 'Lucida Sans';">
+                    <a href="/~markcalla/index.html"> 
+                        CS213-Assignments
+                    </a>
+                </li>
+            </ul>
+            <ul style="
+                list-style-type: none;
+                position: relative;
+                text-align: right;">
+                <li> <a href="#coments">Post your coments</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>
+            Welcome to Mark Calla's Homepage
+            </h1> 
+            <h2>
+                CS213 <strong>BYU-I</strong>
+            </h2>
+            <img src="me.jpg" alt="a picture of me" height="150" width="150" style="float: right;">   
+            <h3>Name: <strong>Mark Anthony Calla Vargaya</strong> </h3>
+            <h3>Major: <strong>Software Engineering</strong></h3>
+            <h3>From: <strong>Tacna-Peru</strong></h3>
+        </header>
+        
+        <h4>
+            My name is Mark and Welcome to my first Homepage, here you can find some information about CS213 for the 5 next weeks.
+        </h4>
+        <table>
+            <tr>
+                <th colspan="3">
+                    CLASS INFORMATION CS213
+                </th>
+            </tr>
+
+            <tr>
+                <td>WEEK-02</td>
+                <td >HTML</td>
+                <td >HOMEPAGE</td>
+            </tr>
+     
+            <tr>
+                <td >WEEK-03</td>
+                <td>CSS</td>
+                <td>ENHANCED HOMEPAGE</td>        
+            </tr>
+            
+            <tr>
+                <td>WEEK-04</td>
+                <td>DESING</td>
+                <td>BUSINESS SITE</td>
+            </tr>
+
+            <tr>
+                <td>WEEK-05</td>
+                <td >RESPONSIVE DESING</td>
+                <td >RESPONSIVE DESING</td>
+            </tr>
+        
+            <tr>
+                <td>WEEK-06</td>
+                <td >PRESENTATION DESING</td>
+                <td>CSS GRID AND PARC/SEO</td>
+            </tr>
+        </table>
+        <p>
+            In todays world the  web plays a vital role in a variety of complex and sophisticated industry applications. 
+            The web application continue to contribute to problems of usability, quality, reliability etc. 
+            With number of changes and advancements in the characteristics of web applications certain new methods needs 
+            to be introduced.Thus web engineering mainly focuses on the methods, and techniques that are considered as the main 
+            foundation of web application.
+            Web engineering focuses on the methodologies, techniques, and tools that are the foundation of Web application development and which
+            support their design, development, evolution, and evaluation. Web application development has certain characteristics that make it different 
+            from traditional software, information system, or computer application development.</p>
+            
+            <p><strong style="color: brown;">Web Engineering</strong> is multidisciplinary and encompasses contributions from diverse areas: systems analysis and design, 
+            software engineering, hypermedia/hypertext engineering, requirements engineering, human-computer interaction, 
+            user interface, information engineering, information indexing and retrieval, testing, modelling and simulation, project 
+            management, and graphic design and presentation. Web engineering is neither a clone nor a subset of software engineering, 
+            although both involve programming and software development. While Web Engineering uses software engineering principles, 
+            it encompasses new approaches, methodologies, tools, techniques, and guidelines to meet the unique requirements 
+            of Web-based applications.</p>
+
+        <section id="coments">
+            <h5>Contac for more Info or submit your coments</h5>
+            <div class="container">
+                <form action="#">
+                    <div class="row">
+                        <div class="firstBox">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="secondBox">
+                            <input type="text" id="name" name="name" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="firstBox">
+                            <label for="mail">E-Mail</label>
+                        </div>
+                        <div class="secondBox">
+                            <input type="text" id="mail" name="mail" placeholder="Enter your E-Mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="firstBox">
+                            <label>Select: </label>
+                        </div>
+                        <div class="secondBox">
+                            <select id="option" name="option">
+                                <option value="coments">Coments</option>
+                                <option value="errors">Errors</option>
+                                <option value="info">Info</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="firstBox">
+                            <label for="description">Description</label>
+                        </div>
+                        <div class="secondBox">
+                            <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio"><label style="color: #3748aa;">Yahoo</label>
+                        <input type="radio" name="radio"><label style="color: #3748aa;">Outlook</label>
+                        <input type="radio" name="radio"><label style="color: #3748aa;">Gmail</label>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                        <input id="reset" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <blockquote>
+            "If you want different results, do not do the same"
+            <em>Albert Einstein</em>
+        </blockquote>
+        <a href="https://www.w3schools.com/css/default.asp">
+            <img src="w3.png" alt="Information" height="140" width="140" style="float: right;"/>
+        </a>
+        <a href="#homeLinks">Return</a>
+        <footer>
+            &copy; Mark Calla <strong>BYU-I</strong> - Contact - mark.calla.vargaya@gmail.com - <a
+             href="https://www.javatpoint.com/simple-html-pages">HTML - </a>
+            <a href="https://www.javascript.com/">JavaScript</a>
+        </footer>
+    </body>
+</html> 

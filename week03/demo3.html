@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title style="font-style: oblique;">Carlos Gerez Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script%7cVarela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        p {
+            color: rgb(108, 168, 80);
+            font-weight: bolder;
+            align-self: center;
+            font-size: 2em;
+            font-style: italic;
+            margin-top: 3em;
+        }
+        
+        h3 {
+            color: rgb(108, 168, 80);
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+        }
+        
+        h5 {
+            color: white;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+    </style>
+
+
+</head>
+
+<body style="margin: 0 auto; background-color: white; width: 100%;">
+    <nav id="home">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="https://byui.instructure.com/courses/96374/assignments/3704663?module_item_id=10230160">CS 213
+                    Assignments</a></li>
+            <li><a href="https://byui.instructure.com/courses/96374/announcements">CS 213 Announcements</a>
+                <li><a href="#post">Post</a>
+                </li>
+        </ul>
+
+
+    </nav>
+    <header>
+        <h1 style="text-align: center;">Welcome to Carlos Gerez Home Page</h1>
+
+        <a href="https://www.churchofjesuschrist.org/?lang=eng&_r=1">
+            <img src="perfil2.jpg" alt=" Student portrait" />
+        </a>
+        <h3 style="color:blue; font-family: 'Varela Round', sans-serif;">Name : Carlos Gerez</h3>
+        <h3 style="color:black; font-family: 'Varela Round', sans-serif;">Major : Bachelor of Science in Applied Technology
+        </h3>
+        <h3 style="color:black; font-family: 'Roboto' , sans-serif;">Nationality : Uruguay (residing in Norway) </h3>
+
+    </header>
+
+    <hr>
+    <blockquote style="font-family: 'Dancing Script', cursive;
+            font-size: 5em;
+            font-weight: bold;
+            color: rgb(99, 159, 228);
+            background-color: transparent;">"The Lord loves effort, because effort brings rewards that can’t come without it." President Russell M. Nelson.
+    </blockquote>
+    <p>Today Scripture: And now behold, I say unto you, my brethren, if ye have experienced a change of heart, and if ye have felt to sing the song of redeeming love, I would ask, can ye feel so now?</p>
+    <h3>Alma 5: 26</h3>
+    <table style="width:100%; font-family: arial, sans-serif; border-collapse: collapse; width: 100%;">
+        <tr>
+            <th>Course</th>
+            <th>Course Description</th>
+            <th>Section</th>
+            <th>Class Time</th>
+            <th>Class Location</th>
+        </tr>
+        <tr>
+            <td>Rel 225 Fundations of The Restauration</td>
+            <td>Gospel Course</td>
+            <td>7</td>
+            <td>Anytime</td>
+            <td>Online</td>
+        </tr>
+        <tr>
+            <td>CIT 260 Objected Oriented Programming</td>
+            <td>Technology</td>
+            <td>7</td>
+            <td>Anytime</td>
+            <td>Online</td>
+        </tr>
+        <tr>
+            <td>CS 246 Software Design and Development</td>
+            <td>Technology</td>
+            <td>7</td>
+            <td>Anytime</td>
+            <td>Online</td>
+        </tr>
+
+        <tr>
+            <td>CS 213 Web Engineering I</td>
+            <td>Technology</td>
+            <td>7</td>
+            <td>Anytime</td>
+            <td>Online</td>
+        </tr>
+        <tr>
+            <td>WDD 230 Web Frontend Development</td>
+            <td>Technology</td>
+            <td>7</td>
+            <td>Anytime</td>
+            <td>Online</td>
+        </tr>
+
+    </table>
+    <section id="post">
+        <h5>Form.</h5>
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="firstBox">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="secondBox">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="firstBox">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="secondBox">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="firstBox">
+                        <label>Contact To: </label>
+                    </div>
+                    <div class="secondBox">
+                        <select id="country" name="country">
+                            <option value="teacher">Teacher</option>
+                            <option value="group">Group</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="firstBox">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="secondBox">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" name="radio"><label>Information</label>
+                    <input type="radio" name="radio"><label>Submmit</label>
+                    <input type="radio" name="radio"><label>Urgent</label>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                    <input id="reset" type="reset" value="Reset">
+                </div>
+            </form>
+            <a href="#home">Back to top</a>
+        </div>
+    </section>
+    <footer>
+        <h4>
+            &copy; Carlos Gerez BYUI 2020
+        </h4>
+    </footer>
+
+
+</body>
+
+</html>     

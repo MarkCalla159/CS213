@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* #0 */
+     body { font-size:36px; }
+  </style>
+    <style> /* #1 */
+	   body { font-size:16px; }
+	</style>
+    <style> /* #2 */
+    body { 
+      font-family: Geneva;
+      font-size: 18px;
+      border-top-width: 10px;
+      border-top-style: dotted;
+      border-top-color: #84c754;
+      background-color: white;
+    }
+    .content{
+      position:relative;
+      overflow:auto;
+    }
+    #title{
+      color:#84c754;;
+      margin: 25px;
+    }
+
+    h1{
+      background-color: #4CAF50;
+      border-radius: 4px;
+      color:whitesmoke;
+      padding: 10px; 
+    }
+
+    h1:hover{
+      width: 200px;
+    }
+
+    #text{
+      color:#84c754;
+      margin: 30px;
+    }
+
+    #menuBarList
+    {
+      font: 20px Arial;
+      color: #84c754;
+      align-content: right;
+      position: relative;
+      overflow:auto;
+      animation: barlist 5s infinite;
+    }
+
+    @keyframes barlist{
+      from {left:0px;}
+      to{left:515px;}
+    }
+    .menuBarItem
+    {
+      width: 155px;
+      background-color: rgb(99, 57, 214);
+      border: 5px solid #84c754;
+      border-radius: 40px;
+      color: #84c754;
+      list-style-type: none;
+      float:left;
+      margin: 10px;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .menuBarItem:hover{
+      background-color: whitesmoke;
+      opacity: 60%;
+    }
+
+    .menuBarItem:first-child{
+      background-color: white ;
+    }
+
+    a{
+      color: rgb(99, 57, 214);
+      text-decoration: none;
+    }
+
+    #Mark{
+      background-color: skyblue;  
+      color:whitesmoke;
+      width: 340px;
+      border-radius: 20px;
+      padding: 10px;
+      overflow: auto;
+      position: absolute;
+      animation: mrk 4s infinite;
+    }
+
+    @keyframes mrk{
+      from{ left: 0px;}
+      to{left:400px;}
+    }
+
+    #sidebar{
+      background-color: #32a4e7;
+      color: #ffffff;
+      padding: 10px;
+      width: 180px;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+      float:right;
+    }
+
+	</style>
+    <style> /* #3 */
+	    body { 
+       font-size:16px;}
+       
+      h1 {
+      text-align: center;
+      list-style-position: inside;
+      background-color:lightgreen;
+      font-family:fantasy}
+      
+      #text {  }
+      #content{ }
+      #Julio{
+
+         background-color: white;
+         width: 300px;
+         border: 15px solid lightblue;
+         padding: 50px;
+         margin: 20px;
+         border-top-style:inset;
+         text-decoration-line: underline;
+         text-decoration-style: solid;
+         
+         }
+        
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+  </head>
+  <body onload="disableStyles()">
+    <div class="document">
+      <div id="title">
+        <h1>Week 03 : CSS</h1>
+        <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+      </div> <!--title -->
+      <div class="content">
+        <div id="menuBar">
+          <ul id="menuBarList">
+            <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+            <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+            <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+            <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+            <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+          </ul>
+        </div> <!-- menuBar -->
+        <div id="text">
+        <h1>Select the Stylesheet</h1>
+        <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            and even the layout of the page.You can change the layout of this page by selecting different 
+            stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+
+             <h1>Instructions</h1>
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that 
+            		you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+            <p>Contributors</p>
+            <div id="Julio">
+            
+                <ul>
+                    <p><i>Julio Monteiro:</i></p>
+                    <li >I changed the font size of the page because it was too small. I did that by changing the body size under the CSS Style.</li>
+                    <li >I changed all the headings so they would be centered, with a nice font and a cool background color.</li>
+                    <li >I created a div to hold the list of things I have changed in this file and I have added some styling to it</li>
+                    <li >more to come</li>
+                    
+
+  
+                </ul>
+            </div>
+            <div id="Mark">
+              <ul>
+                <p><i>Mark Calla</i></p>
+                <li> I changed the font size and family.</li>
+                <li> I added a backgroung in all headers also, I used hover property in all backgroud´s header</li>
+                <li> For the part of stylesheets links I added animations, hover and first-child</li>
+              </ul>
+            </div>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+            		and how you helped your classmates. This means your contribution needs to be briefly described 
+                    on the page.</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by </div>
+      </div> <!-- document -->
+      
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>

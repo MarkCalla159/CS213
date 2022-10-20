@@ -1,0 +1,69 @@
+@media only screen and (min-width: 60rem) {
+    header{
+        width: 100%;
+        padding: 10px;
+    }
+    header:hover{
+        background-color: darkred;
+        padding: 16px;
+    }
+    h1{
+        font-family: 'Lucida Sans';
+        font-size: 60px;
+        font-style: oblique;
+        text-align: center;
+        color: whitesmoke;
+        background-color: navy;
+    }
+    p{
+        padding: 12px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+    h2{
+        text-align:right;
+        background-size: 20%;
+        color: orange;
+    }
+
+    h3, h4{
+        font-family: Georgia;
+        text-align: center;
+        color: rgba(26, 44, 99, 0.781);
+        background-color: rgb(146, 35, 35);
+        padding: 10px;
+    }
+    body{
+        background-color: white;
+        font-family: sans-serif;
+        width: 80%;
+        margin: 0 auto;
+    }
+    img{
+        border-radius: 15px;
+    }
+    .imgTeam img{
+        width: 40%;
+    }
+    #home img{
+        width: 8%;
+        float: right;
+    }
+    .wpTeam img{
+        width: 50%;
+        position: relative;
+    }
+    .webPages {
+        margin: 0 auto;
+        border-radius: 2px;
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items:stretch;
+        flex-direction: row-reverse;
+    }
+    footer:hover{
+        background-color: darkslategray;
+    }
+
+}

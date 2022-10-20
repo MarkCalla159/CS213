@@ -1,0 +1,62 @@
+footer{
+    text-align: center;
+    color: skyblue;
+}
+
+a{
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    animation-name: color;
+    font-size: 24px;
+    color: #84c754;
+}
+blockquote, em{
+    text-align: center;
+    color:teal;
+}
+#option{
+    font-size: 16px;
+    font-family: 'Lucida sans';
+}
+.firstBox{
+    font-size: 17px;
+    font-family: 'Lucida sans';
+    color: #84c754;
+}
+
+input[type=text], textarea, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #84c754;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #84c754;
+}
+input[type=submit]{
+    width: 10%;
+    background-color: #3748aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[id=reset]{
+    width: 10%;
+    background-color:#3748aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type=radio]{
+    width: 5%;
+    border-color: #3748aa;
+}

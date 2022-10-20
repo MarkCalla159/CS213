@@ -1,0 +1,82 @@
+/* Done by Julio*/
+#flex_first {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+    /*I need to confirm with Brother Allred what he means by move the 
+    section 1rem down from the top of the page.*/
+    min-height: 14rem;
+    
+    
+
+}
+
+.center_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Section 2 - Melissa Barden */
+#flex_second .form-row, #flex_second fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#grid_first, #grid_second {
+    display: grid;
+    grid-gap: 1rem;
+    min-height: 100px;
+}
+
+/* Section 3 and 4 * Mark Calla*/
+#grid_first {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+    #grid_first {
+        grid-template-columns: auto auto;
+    }
+    #grid_second{
+        display:grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        gap: 1rem;
+    }
+    .box9 {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .blue_rounded {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #grid_first {
+        grid-template-columns: auto;
+        grid-gap: 1rem;
+    }
+    #grid_second{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1rem;
+    }
+    .box9 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
+

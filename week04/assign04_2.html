@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <title>Macchu Picchu Qhatu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=4.0">
+        <link rel="stylesheet" href="mystyle.css" />
+        <style>
+            h6{
+                text-align: center;
+                margin: 0 auto;
+                font-family:'Lucida Sans';
+                font-size: 20px;
+            }
+            label{
+                color: #37941a; 
+                font-family: fantasy;
+                margin: 15px;
+                font-size:large;
+                padding: 10px;
+                margin-bottom: 10px;
+                /*display:flex;*/
+            }
+            h3{
+                color:chocolate;
+            }
+            input[type=text]
+            {
+                width: 35%;
+                padding: 5px;
+                margin: 10px 0;
+                display: inline-block;
+                border: 2px solid #84c754;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color: #13180f;
+                text-align: center;
+            }
+
+            #option{
+                width: 20%;
+                border: 2px solid #84c754;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color: #84c754;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="logo">
+            <a href="https://www.machupicchu.gob.pe/">
+                <img src="logo.png" alt="Information" height="107" width="140" style="float: left; padding: 10px;"  />
+            </a>
+        </nav>
+        <header>
+            <h1>
+                WELCOME TO MACCHU PICCHU QHATU
+            </h1>
+        </header>
+        <h2>
+            TOURS
+        </h2>
+        <div class="container">
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="imagen1.jpg" alt="photos"/>
+                </li>
+                <li id="slide2">
+                    <img src="imagen2.jpg" alt="photos"/>
+                </li>
+                <li id="slide3">
+                    <img src="imagen3.jpg" alt="photos"/>
+                </li>
+                <li id="slide4">
+                    <img src="imagen4.jpg" alt="photos"/>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-75 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-50 ">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="-----------">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="-----------">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="-----------">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="-----------">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label>State</label>
+                                    <input type="text" id="state" name="state" placeholder="-----------">
+                                </div>
+                                <div class="col-50 ">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="-----------">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                                <select id="option" name="option">
+                                    <option value="card1">VISA</option>
+                                    <option value="card2">MASTERCARD</option>
+                                    <option value="card3">AMERICAN EXPRESS</option>
+                                    <option value="card4">UNION PAY</option>
+                                    <option value="card5">DISCOVER</option>
+                                </select>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="-----------">
+                            <label>Credit Card Number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label>Expiration Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="-----------">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label>Expiration Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="-----------">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="-----------">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Send me a e-mail with the bill
+                    </label>
+                    <input type="submit" value="Continue to checkout">
+                </div>
+            </div>
+            <div id="down">
+                <form class="form" action="assign04.html ">
+                    <input class="forminterior" type="submit" value="Back to Main Page" />
+                </form>
+            </div>
+        </div>
+        <footer>
+            <h6>
+                "ENJOY YOUR EXPERIENCE, CHOOSE US"
+            </h6>
+            <h6>
+                CONTACT NUMBER: +51 976505295
+                E-MAIL: mark.calla.vargaya@gmail.com
+            </h6>
+            <h6>&copy; 2021 Mark Calla
+                <a href="https://www.byui.edu/">BYUI</a>
+            </h6>
+        </footer>
+    </body>
+</html>

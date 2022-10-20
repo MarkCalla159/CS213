@@ -1,0 +1,25 @@
+html,
+body {
+    max-width: 100%;
+}
+input[type=submit]{
+    width: 20%;
+    background-color: #3748aa;
+    color: white;
+    padding: 1em;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.wpTeam img{
+    width: 50%;
+    position: relative;
+    cursor:cell;
+}
+#home img{
+    width: 8%;
+    float: right;
+}
